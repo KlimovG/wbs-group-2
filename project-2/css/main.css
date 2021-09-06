@@ -37,12 +37,36 @@ textarea {
   padding: 90px 0;
 }
 
-.section__title {
-  font-weight: 500;
-  font-size: 40px;
+.hero__title,
+.section__title,
+.section__heading {
+  font-family: "DM Serif Display", serif;
 }
 
+.section__title {
+  font-size: 40px;
+  line-height: 55px;
+}
 
+.section__heading {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.section__text,
+.section__subject {
+  font-family: "Roboto", sans-serif;
+}
+
+.section__subject {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23;
+}
+
+.section__text {
+  line-height: 19px;
+}
 
 /* Bogdan */
 
