@@ -46,10 +46,15 @@ textarea {
   padding: 90px 0;
 }
 
-.hero__title,
+.title,
 .section__title,
 .section__heading {
   font-family: "DM Serif Display", serif;
+}
+
+.subtitle {
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .section__title {
@@ -102,6 +107,8 @@ textarea {
 
 .button--primary {
   background-color: #FFC107;
+  border: 1px solid #FFC107;
+  color: #0E0E0E;
 }
 
 .button--outline {
@@ -119,8 +126,8 @@ textarea {
 @media screen and (min-width: 992px) {
 
   .button--primary:hover {
-    border: 1px solid #FFC107;
     background-color: #fff;
+    color: #0E0E0E;
   }
 
 }
@@ -211,11 +218,33 @@ textarea {
     visibility: visible;
   }
 
-  /* .header__sub-nav .header__link:hover {
-    background-color: #A67D02;
-    color: #fff;
-  } */
+}
 
+/* Hero styles */
+
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero__title {
+  margin-bottom: 17px;
+}
+
+.hero__subtitle {
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  max-width: 165px;
+  margin: 0 auto;
 }
 
 /* Bogdan */
