@@ -26,7 +26,7 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <a href="#" class="header__logo col-3 justify-content-center">
+        <a href="home" class="header__logo col-3 justify-content-center">
           <img src="img/logo.svg" alt="Logo">
         </a>
         <nav class="header__nav offset-1 col-5 ">
@@ -46,8 +46,10 @@
             </li>
             <li class="header__item"><a href="#" class="link">Russia</a>
               <ul class="header__sub-nav">
-                <li><a href="#" class="link header__link">Recipe 1</a></li>
-                <li><a href="#" class="link header__link">Recipe 2</a></li>
+                <li><a href="#olivie" class="link header__link">Recipe 1</a>
+                </li>
+                <li><a href="#okroshka" class="link header__link">Recipe 2</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -56,7 +58,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main id="home">
     <section class="hero">
       <div class="container">
         <h1 class="title hero__title">Cookbook of three continents</h1>
@@ -73,7 +75,7 @@
           <div class="col-12 col-lg-5 section__image">
             <img src="img/olivier.png" alt="Olivier's image" />
           </div>
-          <div class="col-5 section__info">
+          <div class="col-12 col-lg-5 section__info">
             <h3 class="section__heading olivier__heading col-12">Story
             </h3>
             <p class="col-12 section__text olivier__text">
@@ -131,7 +133,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-7 section__instruction">
+          <div class="order-1 order-lg-0 col-12 col-lg-7 section__instruction">
             <div class="section__steps">
               <h3 class="section__heading">Cooking instruction</h3>
               <ol class="section__list">
@@ -154,11 +156,11 @@
                 watch a video
               </button>
             </div>
-            <button class="button button--primary ml-auto">
+            <button class="section__share-btn button button--primary ml-auto">
               share the recipe
             </button>
           </div>
-          <div class="col-12 col-lg-4 offset-lg-1 section__ingredients">
+          <div class="offset-2 col-8 col-lg-4 offset-lg-1 section__ingredients">
             <h3 class="section__heading">Ingredients</h3>
             <table class="section__table">
               <thead>
@@ -209,6 +211,7 @@
           </div>
         </div>
       </div>
+
     </section>
   </main>
   <!-- Bogdan -->

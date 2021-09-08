@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 input,
 button,
 textarea {
@@ -108,7 +112,7 @@ textarea {
 }
 
 .section__image img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .section__settings img {
@@ -116,7 +120,13 @@ textarea {
 }
 
 .section__instruction {
+  display: flex;
+  flex-direction: column;
   margin-top: 60px;
+}
+
+.section__share-btn {
+  margin: 30px auto 0;
 }
 
 .section__steps {
@@ -153,10 +163,10 @@ textarea {
 /* Interface styles */
 
 .link {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 28px;
-  color: #a67d02;
+  color: #a66002;
 }
 
 .button {
@@ -166,7 +176,7 @@ textarea {
   align-items: center;
   padding: 16px 32px;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -181,8 +191,8 @@ textarea {
 
 .button--outline {
   background-color: #ffffff;
-  border: 3px solid #a67d02;
-  color: #a67d02;
+  border: 1px solid #ffc577;
+  color: #0e0e0e;
 }
 
 .button,
@@ -195,6 +205,11 @@ textarea {
   .button--primary:hover {
     background-color: #fff;
     color: #0e0e0e;
+  }
+
+  .button--outline:hover {
+    background-color: #ffc577;
+    color: #fff;
   }
 }
 
@@ -274,7 +289,7 @@ textarea {
 
   .header__item:hover>a,
   .header__sub-nav .header__link:hover {
-    background-color: #a67d02;
+    background-color: #ffc577;
     color: #fff;
   }
 
