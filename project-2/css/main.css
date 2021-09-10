@@ -370,6 +370,7 @@ textarea {
   position: absolute;
   display: none;
   color: #2b3f50;
+  text-align: center;
 }
 
 .header__logo {
@@ -490,18 +491,6 @@ textarea {
   .header__nav.active {
     transform: translateX(0);
   }
-
-  /* .header__nav.active::after {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(43, 63, 80, .5);
-  } */
-
 
 
   .header .header__close,

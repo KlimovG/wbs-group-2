@@ -8,17 +8,20 @@ const menuContainer = document.querySelector(".header__nav"),
   closeBtn = document.querySelector(".header__close"),
   openBtn = document.querySelector(".header__open"),
   menuOpen = () => {
-    openBtn.addEventListener("click", () => {
-      menuContainer.classList.add("active")
-      header.classList.add('active')
-    })
+    menuContainer.classList.add("active")
+    header.classList.add('active')
   },
   menuClose = () => {
-    closeBtn.addEventListener("click", () => {
-      menuContainer.classList.remove("active")
-      header.classList.remove('active')
-    })
+    menuContainer.classList.remove("active")
+    header.classList.remove('active')
   };
 
-menuClose();
-menuOpen();
+
+openBtn.addEventListener("click", () => menuOpen());
+closeBtn.addEventListener("click", () => menuClose());
+header.addEventListener("click", (e) => {
+  const targetClass = e.target.className;
+  if (targetClass == "header active") {
+    menuClose();
+  }
+})
