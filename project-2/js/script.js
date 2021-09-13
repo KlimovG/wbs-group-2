@@ -3,6 +3,8 @@ const shareButton = document.querySelectorAll('.section__share-btn');
 
 shareButton.forEach(btn => btn.addEventListener("click", () => alert(window.location.href)))
 
+
+//Adaptive menu
 const menuContainer = document.querySelector(".header__nav"),
   header = document.querySelector('.header'),
   closeBtn = document.querySelector(".header__close"),
