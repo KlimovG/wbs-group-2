@@ -291,8 +291,12 @@ textarea {
 
 @media screen and (max-width: 576px) {
 
-  .subtitle {
+  .title {
     font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
     line-height: 25px;
   }
 
