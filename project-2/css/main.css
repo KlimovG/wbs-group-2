@@ -71,8 +71,12 @@ textarea {
   font-family: "DM Serif Display", serif;
 }
 
+.title {
+  font-size: 2.5rem;
+}
+
 .subtitle {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 35px;
 }
 
